@@ -19,18 +19,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var fourthAnswerButton: UIButton!
     @IBOutlet weak var playAgainButton: UIButton!
    
-    var questionProvider = QuestionProvider()
+    var questionProvider = QuestionProvider() //Loading array of questions and initiatin random function
+    //var checkAnswers = CheckAnswer()
+    //var scoreForThisGame = Answer()
+
     var finalAnswer: Int = 0
     var correctQuestions: Int = 0
     
     //Dette skal fikses senere
     var questionsAsked: Int = 0
-    var questionsPerRound: Int = 5
+    var questionsPerRound: Int = 4
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         finalAnswer = questionProvider.randomQuestion(label: questionField, button1: firstAnswerButton, button2: secondAnswerButton, button3: thirdAnswerButton, button4: fourthAnswerButton, button5: playAgainButton)
+        
         }
     
     @IBAction func checkAnswer(_ sender: UIButton) {
@@ -48,7 +52,7 @@ class ViewController: UIViewController {
             questionField.text = "Sorry, wrong answer!"
         }
         
-        loadNextRoundWithDelay(seconds: 2)
+        loadNextRoundWithDelay(seconds: 1)
     }
     
     
@@ -71,6 +75,7 @@ class ViewController: UIViewController {
         if questionsAsked == questionsPerRound {
             // Game is over
             displayScore()
+            questionProvider = QuestionProvider()
         } else {
             // Continue game
             finalAnswer = questionProvider.randomQuestion(label: questionField, button1: firstAnswerButton, button2: secondAnswerButton, button3: thirdAnswerButton, button4: fourthAnswerButton, button5: playAgainButton)

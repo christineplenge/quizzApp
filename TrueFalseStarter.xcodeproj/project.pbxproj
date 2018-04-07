@@ -13,6 +13,9 @@
 		97093D431C913506001275BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97093D421C913506001275BC /* Assets.xcassets */; };
 		97093D461C913506001275BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97093D441C913506001275BC /* LaunchScreen.storyboard */; };
 		97093D531C932116001275BC /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 97093D521C932116001275BC /* GameSound.wav */; };
+		D90F46291F5BE97C002BB110 /* RandomQuestionIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F46281F5BE97C002BB110 /* RandomQuestionIndex.swift */; };
+		D996AD8A1F347DD400E13594 /* CheckAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996AD891F347DD400E13594 /* CheckAnswer.swift */; };
+		D996AD8C1F34874300E13594 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D996AD8B1F34874300E13594 /* Answer.swift */; };
 		D9CDFD641F29F9CC0084670C /* QuestionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CDFD631F29F9CC0084670C /* QuestionType.swift */; };
 		D9CDFD661F2A22330084670C /* QuestionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CDFD651F2A22330084670C /* QuestionProvider.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +29,9 @@
 		97093D451C913506001275BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97093D471C913506001275BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97093D521C932116001275BC /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
+		D90F46281F5BE97C002BB110 /* RandomQuestionIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomQuestionIndex.swift; sourceTree = "<group>"; };
+		D996AD891F347DD400E13594 /* CheckAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckAnswer.swift; sourceTree = "<group>"; };
+		D996AD8B1F34874300E13594 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		D9CDFD631F29F9CC0084670C /* QuestionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionType.swift; sourceTree = "<group>"; };
 		D9CDFD651F2A22330084670C /* QuestionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,11 +70,14 @@
 				97093D3D1C913506001275BC /* ViewController.swift */,
 				D9CDFD631F29F9CC0084670C /* QuestionType.swift */,
 				D9CDFD651F2A22330084670C /* QuestionProvider.swift */,
+				D996AD891F347DD400E13594 /* CheckAnswer.swift */,
+				D996AD8B1F34874300E13594 /* Answer.swift */,
 				97093D3F1C913506001275BC /* Main.storyboard */,
 				97093D421C913506001275BC /* Assets.xcassets */,
 				97093D441C913506001275BC /* LaunchScreen.storyboard */,
 				97093D471C913506001275BC /* Info.plist */,
 				97093D521C932116001275BC /* GameSound.wav */,
+				D90F46281F5BE97C002BB110 /* RandomQuestionIndex.swift */,
 			);
 			path = TrueFalseStarter;
 			sourceTree = "<group>";
@@ -146,10 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90F46291F5BE97C002BB110 /* RandomQuestionIndex.swift in Sources */,
 				D9CDFD661F2A22330084670C /* QuestionProvider.swift in Sources */,
 				97093D3E1C913506001275BC /* ViewController.swift in Sources */,
 				D9CDFD641F29F9CC0084670C /* QuestionType.swift in Sources */,
+				D996AD8C1F34874300E13594 /* Answer.swift in Sources */,
 				97093D3C1C913506001275BC /* AppDelegate.swift in Sources */,
+				D996AD8A1F347DD400E13594 /* CheckAnswer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
